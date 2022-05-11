@@ -3,8 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Twig Template Engine</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@300;400;500;700;900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'inter', cursive;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        p {
+            text-align: center;
+            color: #667085;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .btn-primary {
+            background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+            padding: 0.5rem 0.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.25s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 6px;
+            display: block;
+            font-weight: bold;
+            line-height: 1.5;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-left: 15px;
+        }
+
+
+        .btn-github {
+            padding: 0.5rem 0.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.25s;
+            background-size: 200% auto;
+            color: #000000;
+            border: 1px solid black;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 6px;
+            display: block;
+            font-weight: bold;
+            line-height: 1.5;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: transparent;
+            margin-left: 15px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Xerophy Framework</h1>
+    <header class="header">
+        <h1 class="title">Xerophy Framework</h1>
+        <p>
+            Powerful, easy to use, high performance, beautiful code, a lightweight framework<br>
+            for <strong style="color: #5925DC;">PHP</strong> developers
+        </p>
+        <div class="buttons">
+            <a href="#" class="btn-github">Github</a>
+            <a href="#" class="btn-primary">GET STARTED</a>
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <script>
+        let typed = new TypeIt('.title', {
+            speed: 60,
+            startDelay: 900,
+        })
+            .go();
+    </script>
 </body>
 </html>
