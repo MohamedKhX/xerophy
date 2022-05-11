@@ -1,0 +1,22 @@
+{
+    "name": "xerophy/xerophy",
+    "description": "the xerophy framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MohamedKhX",
+            "email": "muhamedkhx2@gmail.com"
+        }
+    ],
+    "require": {
+        "xerophy/framework": "v0.1-alpha"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
